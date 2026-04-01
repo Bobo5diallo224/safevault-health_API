@@ -1,12 +1,11 @@
 <?php
 
-return [
-    // On change 'bcrypt' en 'argon2id'
+return [    
     'driver' => 'argon2id',
 
     'argon' => [
-        'memory' => 65536,   // 64 MB — coût mémoire élevé = résistant aux GPUs
+        'memory' => 65536,   
         'threads' => 1,
-        'time' => 4,         // 4 itérations — ralentit les attaques brute force
+        'time' => 4,         
     ],
 ];
